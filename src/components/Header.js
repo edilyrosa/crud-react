@@ -8,7 +8,7 @@ function Header() {
         <div>
              <header>
                  <h1 className='main-title'>CRUD API WITH JSON SERVER 🦄</h1>
-                    <button>
+                    <button onClick={handleTheme} >
                         <i id="dark" 
                             onClick={handleTheme} 
                             className={`fa-solid ${theme ? "fa-moon fa-beat" :" fa-sun fa-spin" } fa-2xl`} 

@@ -13,32 +13,29 @@ const CrudProvider = ({children}) =>{ //Logic to get the DATA and return the wra
     let {get, post, put, del} = HelpHttp()
     
     useEffect(() => {
-      console.log('soy GET ALL con useeffect');
       setLoading(true)
       get(url, options)
       .then(resJson => {
         if(!resJson.err){
-          setDb(resJson) //Antualizo con el TODO
+          setDb(resJson) //Update all.
         }else{
           setError(resJson)
           setDb(null)
         } 
         setLoading(false)
-        //console.log(json)
         })
     }, [url]);
 
     
 
     const createData = (data) =>{
-      console.log('soy POST sin useeffect');
       let options = {
         body:data, 
         headers:{
           "content-type":"application/json"
         }
       }
-      post(url, options)//Envio el nuevo registro al servidor
+      post(url, options)//Sending the new record to server
       .then(resJson =>{
         if(!resJson.err) {
           //!Deberia actualizar la VAR DE EDO con el ID real q la BBDD me da, esperar esa respuesta del servidor.
@@ -51,7 +48,6 @@ const CrudProvider = ({children}) =>{ //Logic to get the DATA and return the wra
     
     
     const updaData = (data) =>{
-      console.log('soy UPDATE sin useeffect');
       let endpoint = `${url}/${data.id}`
       let options = {
         body:data,
@@ -63,7 +59,7 @@ const CrudProvider = ({children}) =>{ //Logic to get the DATA and return the wra
       put(endpoint, options)
       .then(resJson =>{
         if(!resJson.err){
-          console.log(resJson);
+
           //!Es con lo qe viene del <Form que debo actualizar no con la respuesta exitosa del servidor. Ya tengo el ID
           let newData = db.map(e => e.id === data.id ? data : e) 
           setDb(newData)
@@ -73,14 +69,13 @@ const CrudProvider = ({children}) =>{ //Logic to get the DATA and return the wra
 
 
     const deleteData = (id) =>{
-      console.log('soy DELETE sin useeffect');
       let endpoint = `${url}/${id}`
       let options = {
         headers:{
           "content-type":"application/json"
         }
       }
-      let isConfirm = window.confirm(`Are you sure to detele the register id = ${id}`)
+      let isConfirm = window.confirm(`Are you sure of detele the register id = ${id}`)
       if(isConfirm){
         del(endpoint, options).then(resJson =>{
           if(!resJson.err){

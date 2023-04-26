@@ -45,6 +45,10 @@ function CrudForm() {
         if(!form.id) createData(form); //Doesnt work form.id === null
         else updaData(form);
         handleReset();
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+          });
     }
 
     const handleReset = (e) => {
