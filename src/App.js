@@ -1,10 +1,14 @@
-import './App.css';
 
+import CrudApi from './components/CrudApi'
+import { CrudProvider } from './components/context/CrudContext';
 function App() {
   return (
-    <div >
-      <h1>Hi</h1>
-    </div>
+    <>
+       <CrudProvider>
+        <CrudApi/>
+       </CrudProvider>
+
+    </>
   );
 }
 

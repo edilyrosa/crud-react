@@ -1,0 +1,134 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Edilysa",
+      "email": "@edily",
+      "hobbies": [],
+      "condition": false
+    },
+    {
+      "id": 2,
+      "name": "Elys",
+      "email": "edily@gmail.com",
+      "hobbies": [],
+      "condition": false
+    },
+    {
+      "id": 3,
+      "name": "Yralysss",
+      "email": "edilyrosa@gmail.com",
+      "hobbies": "Work Out",
+      "condition": true
+    },
+    {
+      "id": 6,
+      "name": "Rosa",
+      "email": "cakney876@cloy2.com",
+      "hobbies": "Work Out",
+      "condition": true
+    },
+    {
+      "id": 7,
+      "name": "Jose ",
+      "email": "roro@gmail.com",
+      "hobbies": "read"
+    },
+    {
+      "id": 8,
+      "name": "Gorge",
+      "email": "roro@gmail.com",
+      "hobbies": "Work Out"
+    },
+    {
+      "0": {
+        "name": "",
+        "email": "",
+        "hobbies": [],
+        "condition": false,
+        "id": null
+      },
+      "name": "Jose ",
+      "email": "cakney876@cloy2.com",
+      "hobbies": "Work Out",
+      "id": 13
+    },
+    {
+      "0": {
+        "name": "",
+        "email": "",
+        "hobbies": [],
+        "condition": false,
+        "id": null
+      },
+      "name": "Soila",
+      "email": "soila@",
+      "hobbies": "Work Out",
+      "condition": true,
+      "id": 14
+    },
+    {
+      "0": {
+        "name": "",
+        "email": "",
+        "hobbies": [],
+        "condition": false,
+        "id": null
+      },
+      "name": "PEPSI",
+      "email": "roro@gmail.com",
+      "id": 15
+    },
+    {
+      "0": {
+        "name": "",
+        "email": "",
+        "hobbies": [],
+        "condition": false,
+        "id": null
+      },
+      "name": "Jose ",
+      "email": "roro@gmail.com",
+      "hobbies": "read",
+      "id": 16
+    },
+    {
+      "0": {
+        "name": "",
+        "email": "",
+        "hobbies": [],
+        "condition": false,
+        "id": null
+      },
+      "name": "dss",
+      "email": "roro@gmail.com",
+      "id": 17
+    },
+    {
+      "0": {
+        "name": "",
+        "email": "",
+        "hobbies": [],
+        "condition": false,
+        "id": null
+      },
+      "name": "PEPSI",
+      "email": "roro@gmail.com",
+      "id": 18
+    },
+    {
+      "0": {
+        "name": "",
+        "email": "",
+        "hobbies": [],
+        "condition": false,
+        "id": null
+      },
+      "name": "erminia ",
+      "email": "roro@gmail.com",
+      "hobbies": "read",
+      "condition": true,
+      "id": 19
+    }
+  ]
+}
