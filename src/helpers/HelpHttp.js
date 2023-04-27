@@ -1,5 +1,4 @@
 export const HelpHttp = () =>{
-    console.log('soy helper');
 
     const customFerch = (endpoint, options) =>{
         const defaultHeader = {
