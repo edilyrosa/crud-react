@@ -5,7 +5,7 @@ const CrudContext = createContext() //Argument of useContext() for all consumers
 
 const CrudProvider = ({children}) =>{ //Logic to get the DATA and return the wrapper.
     const [db, setDb] = useState(null);//Not [] to avoit when upload says "table without data". Happend when really bd.length be [] <table won't upload until has register.
-    const [dataToEdict, setDataToEdict] = useState(null); //FLAG: null to create and true to update
+    const [dataToEdict, setDataToEdict] = useState(null); //FLAG: (null) to create, (register) to update
     const [loading, setLoading] = useState(null);
     const [error, setError] = useState(null);
     let url = 'http://localhost:5000/users'
@@ -38,14 +38,12 @@ const CrudProvider = ({children}) =>{ //Logic to get the DATA and return the wra
       post(url, options)//Sending the new record to server
       .then(resJson =>{
         if(!resJson.err) {
-          //!Deberia actualizar la VAR DE EDO con el ID real q la BBDD me da, esperar esa respuesta del servidor.
+          //!Should update with the real ID real that BBDD gives. I should wait and get that response from the server.
           setDb([...db, resJson])
         }
         else error(resJson)
       })
-      
     }
-    
     
     const updaData = (data) =>{
       let endpoint = `${url}/${data.id}`

@@ -21,6 +21,7 @@ function CrudTableRow({register}) {
             behavior: 'smooth'
           });
     }
+
     return ( 
         <tr>
             <td>{name}</td>
@@ -36,4 +37,4 @@ function CrudTableRow({register}) {
      );
 }
 
-export default CrudTableRow;
+export default  CrudTableRow;

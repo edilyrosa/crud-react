@@ -42,7 +42,7 @@ function CrudForm() {
             return;
         }
         //If id = null, is a create.
-        if(!form.id) createData(form); //Doesnt work form.id === null
+        if(!form.id) createData(form); //Doesnt work if(form.id === null)
         else updaData(form);
         handleReset();
         window.scrollTo({
