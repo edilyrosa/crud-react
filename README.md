@@ -1,3 +1,7 @@
+This app was written in REACT. This Does request CRUD to JSON SERVER, and it responds successfully.  All typical errors are handled. The data is provided by React Context.
+This app has dark and light themes, handled by a useState. 
+If you want to try it, run the script "fake-api", it's  "json-server --watch src/api/db.json --port 5000"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
